@@ -1,0 +1,11 @@
+.mainContent {
+  margin-left: 290px;
+  background-color: var(--background-color);
+  transition: all 0.3s ease-in-out;
+  overflow-x: hidden;
+}
+
+.mainContent.fullWidth {
+  margin-left: 0;
+  width: 100%;
+}

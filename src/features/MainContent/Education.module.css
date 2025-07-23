@@ -1,0 +1,110 @@
+.education {
+  padding: 2rem 4rem;
+  background-color: var(--background-color);
+  transition: all 0.3s ease-in-out;
+}
+
+/* ===== Header Section ===== */
+.eduHeader {
+  position: relative;
+  font-size: 28px;
+  font-weight: bold;
+  padding-left: 20px;
+  margin-bottom: 3rem;
+}
+
+.eduHeader h2 {
+  margin: 0;
+}
+
+.eduHeader p {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.eduHeader::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 5px;
+  height: 90%;
+  background-color: var(--secondary-color);
+}
+
+/* ===== Edu Content Section ===== */
+.eduContent {
+  width: 100%;
+  padding: 0 0 2rem 2rem;
+}
+
+/* ===== School Item Layout using Flex ===== */
+.schoolItem {
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 1px solid #d0d0d0;
+  padding: 20px 0;
+  gap: 1.5rem;
+}
+
+/* ===== Timeline (Left Column) ===== */
+.timeLine {
+  width: 20%;
+}
+
+.timeLine h5 {
+  font-size: 18px;
+  font-style: italic;
+  font-weight: normal;
+  padding: 10px 0;
+  color: gray;
+}
+
+.recent {
+  background-color: #199cdb;
+  color: white;
+  border-radius: 5px;
+  padding: 2px 10px;
+}
+
+/* ===== school Details (Right Column) ===== */
+.schoolDetail {
+  width: 80%;
+  padding: 0 0 0 10px;
+}
+
+.nameSchool {
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.nameSchool h4 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.schoolContent h5 {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.8;
+  font-weight: normal;
+  color: gray;
+}
+
+/* ===== Responsive Mobile View ===== */
+@media (max-width: 768px) {
+  .schoolItem {
+    flex-direction: column;
+  }
+
+  .timeline,
+  .schoolDetail {
+    width: 100%;
+  }
+
+  .nameSchool::before {
+    left: 0;
+  }
+}

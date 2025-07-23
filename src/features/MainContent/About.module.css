@@ -1,0 +1,85 @@
+.about {
+  padding: 2rem 4rem 4rem 4rem;
+  background-color: var(--background-color);
+  transition: all 0.3s ease-in-out;
+}
+.aboutHeader {
+  position: relative;
+  font-size: 28px;
+  font-weight: bold;
+  padding-left: 20px;
+  margin-bottom: 3rem;
+}
+.aboutHeader h2 {
+  padding-bottom: 0;
+  margin: 0;
+}
+.aboutHeader p {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0;
+}
+.aboutHeader::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 5px;
+  height: 90%;
+  background-color: var(--secondary-color);
+}
+.aboutWrapper {
+  padding-left: 2rem;
+}
+
+.aboutIntro {
+  font-size: 18px;
+}
+.aboutContent {
+  display: flex;
+  gap: 40px;
+}
+.imageWrapper {
+  margin-top: 1.5rem;
+  position: relative;
+  display: inline-block;
+  z-index: 1; /* đảm bảo ảnh nằm trên */
+}
+
+.profilePic {
+  width: 250px;
+  height: auto;
+  position: relative;
+  z-index: 2;
+  border: 2px solid var(--primary-color);
+}
+
+.imageWrapper::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 250px;
+  height: 337px;
+  border: 6px solid var(--primary-color);
+  z-index: 1;
+}
+
+.aboutDetails {
+  font-size: 18px;
+  padding: 0 2rem;
+}
+
+.aboutDetails ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style: none;
+  padding: 0;
+}
+.aboutDetails ul li {
+  margin-bottom: 1rem;
+}
+.about span {
+  font-weight: bold;
+  color: var(--secondary-color);
+}

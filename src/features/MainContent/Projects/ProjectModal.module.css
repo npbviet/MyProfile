@@ -1,0 +1,82 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+
+.modal {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  position: relative;
+  max-width: 50rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.modal h2 {
+  font-size: 32px;
+  margin: 0;
+  position: relative; /* Cần dòng này để ::before căn theo h2 */
+  padding-left: 15px;
+}
+.modal h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 5px;
+  height: 90%;
+  background-color: var(--secondary-color);
+  border-radius: 2px;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.5rem 0.2rem 0.5rem;
+  background: none;
+  font-size: 18px;
+  color: #ced4da;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.closeBtn:hover,
+.closeBtn:active {
+  color: var(--primary-color);
+  background-color: var(--thirty-color);
+
+  border: none;
+}
+/* Áp dụng cho phần chứa thanh cuộn (thường là modal) */
+.modal {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #ccc transparent; /* Firefox */
+}
+
+/* Chrome, Edge */
+.modal::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal::-webkit-scrollbar-thumb {
+  background-color: #ccc; /* Nhạt hơn */
+  border-radius: 10px;
+  border: 2px solid transparent; /* Tạo khoảng cách */
+  background-clip: content-box;
+}

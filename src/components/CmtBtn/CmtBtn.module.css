@@ -1,0 +1,91 @@
+.cmtBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  z-index: 9999;
+}
+
+.iconContainer {
+  width: 36px;
+  height: 36px;
+  background-color: var(--secondary-color);
+  color: white;
+  border-radius: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  font-size: 16px;
+}
+
+.cmtContent {
+  position: relative;
+  background-color: var(--text-color);
+  color: white;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  font-weight: 500;
+  opacity: 0;
+  transform: translateX(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  margin: 0;
+  pointer-events: none;
+}
+
+/* Mũi tên tam giác bên trái */
+.cmtContent::before {
+  content: "";
+  position: absolute;
+  left: -4px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-right: 6px solid var(--text-color);
+}
+
+.cmtBtn:hover .cmtContent {
+  opacity: 1;
+  transform: translateX(0);
+}
+/* Hiệu ứng hover cho icon */
+
+.moveLeft:hover .icon {
+  animation: moveLeftLoop 1s infinite;
+}
+
+.moveRight:hover .icon {
+  animation: moveRightLoop 1s infinite;
+}
+
+@keyframes moveLeftLoop {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-6px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveRightLoop {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(6px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

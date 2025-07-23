@@ -1,0 +1,37 @@
+.button {
+  position: relative;
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  z-index: 1;
+  cursor: pointer;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  width: 150%;
+  height: 0;
+  background-color: var(--primary-color);
+  transform: rotate(45deg);
+  top: 100%;
+  left: -100%;
+  z-index: -1;
+  transition: all 0.6s ease;
+}
+
+.button:hover::before {
+  height: 300%; /* Mở rộng để phủ toàn nút */
+  width: 300%;
+  top: -100%;
+}
+
+.button:hover {
+  color: white;
+}

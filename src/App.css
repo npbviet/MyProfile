@@ -1,0 +1,13 @@
+/* @import "./variables.css"; */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+.btnSidebar {
+  position: fixed;
+  top: 13.25rem;
+  left: 0rem;
+}

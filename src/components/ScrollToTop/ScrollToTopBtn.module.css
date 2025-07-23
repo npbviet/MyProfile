@@ -1,0 +1,72 @@
+.scrollToTop {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.iconCircle {
+  width: 36px;
+  height: 36px;
+  background-color: var(--secondary-color);
+  color: white;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.iconCircle:hover {
+  background-color: var(--text-color);
+  transform: translateY(-2px); /* nhấc lên nhẹ khi hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* đổ bóng đậm hơn */
+}
+
+.icon {
+  font-size: 16px;
+}
+
+.label {
+  position: relative;
+  background-color: var(--text-color);
+  color: white;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  font-weight: 500;
+  opacity: 0;
+  transform: translateX(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  margin: 0;
+  pointer-events: none;
+}
+
+/* Mũi tên tam giác bên trái */
+.label::before {
+  content: "";
+  position: absolute;
+  right: -4px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 6px solid var(--text-color);
+}
+
+.scrollToTop:hover .label {
+  opacity: 1;
+  transform: translateX(0);
+}
