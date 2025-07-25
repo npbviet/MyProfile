@@ -79,7 +79,7 @@ const projectData = [
       "Team size": "1 (solo)",
       "Supporting tools":
         "Git, Postman, Redux, React Developer Tools, Firebase,...",
-      Github_FE: "https://github.com/npbviet/BookingClient",
+      Github_FE: "https://github.com/npbviet/BookingClientApp",
       Github_BE: "https://github.com/npbviet/BookingServer",
     },
     videoUrl: "...",
@@ -105,7 +105,7 @@ const projectData = [
       "Team size": "1 (solo)",
       "Supporting tools":
         "Git, Postman, Redux, React Developer Tools, Firebase,...",
-      Github_FE: "https://github.com/npbviet/BookingAdmin",
+      Github_FE: "https://github.com/npbviet/BookingAdminApp",
       Github_BE: "https://github.com/npbviet/BookingServer",
     },
     videoUrl: "...",
@@ -157,8 +157,7 @@ const projectData = [
       "Team size": "1 (solo)",
       "Supporting tools":
         "Git, Postman, Redux, React Developer Tools, Firebase,...",
-      Github: "",
-      LinkFE: "https://github.com/yourname/order-food",
+      Github_FE: "https://github.com/npbviet/Order-Food",
     },
     videoUrl: "...",
     image: OrderFoodImg,
