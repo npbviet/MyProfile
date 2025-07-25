@@ -26,7 +26,8 @@ const projectData = [
       "Team size": "1 (solo)",
       "Supporting tools":
         "Git, Postman, Redux, React Developer Tools, Nodemailer, Firebase,...",
-      Github: "https://github.com/yourname/client-shopping",
+      Github_FE: "https://github.com/npbviet/ECommerceClient",
+      Github_BE: "https://github.com/npbviet/ECommerceServer",
     },
     videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4",
     image: ClientShoppingImg,
@@ -51,7 +52,8 @@ const projectData = [
       "Team size": "1 (solo)",
       "Supporting tools":
         "Git, Postman, Redux, React Developer Tools, Firebase,...",
-      Github: "https://github.com/yourname/admin-shopping",
+      Github_FE: "https://github.com/npbviet/ECommerceAdmin",
+      Github_BE: "https://github.com/npbviet/ECommerceServer",
     },
     videoUrl: "...",
     image: AdminShoppingImg,
@@ -77,7 +79,8 @@ const projectData = [
       "Team size": "1 (solo)",
       "Supporting tools":
         "Git, Postman, Redux, React Developer Tools, Firebase,...",
-      Github: "https://github.com/yourname/client-booking",
+      Github_FE: "https://github.com/npbviet/BookingClient",
+      Github_BE: "https://github.com/npbviet/BookingServer",
     },
     videoUrl: "...",
     image: ClientBookingImg,
@@ -102,7 +105,8 @@ const projectData = [
       "Team size": "1 (solo)",
       "Supporting tools":
         "Git, Postman, Redux, React Developer Tools, Firebase,...",
-      Github: "https://github.com/yourname/admin-booking",
+      Github_FE: "https://github.com/npbviet/BookingAdmin",
+      Github_BE: "https://github.com/npbviet/BookingServer",
     },
     videoUrl: "...",
     image: AdminBookingImg,
@@ -127,7 +131,8 @@ const projectData = [
       "Team size": "1 (solo)",
       "Supporting tools":
         "Git, Postman, Redux, React Developer Tools, Firebase,...",
-      Github: "https://github.com/yourname/movie-trailer-app",
+      Github_FE: "https://github.com/npbviet/MovieAppClient",
+      Github_BE: "https://github.com/npbviet/MovieAppServer",
     },
     videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4",
     image: MovieAppImg,
@@ -152,7 +157,8 @@ const projectData = [
       "Team size": "1 (solo)",
       "Supporting tools":
         "Git, Postman, Redux, React Developer Tools, Firebase,...",
-      Github: "https://github.com/yourname/order-food",
+      Github: "",
+      LinkFE: "https://github.com/yourname/order-food",
     },
     videoUrl: "...",
     image: OrderFoodImg,

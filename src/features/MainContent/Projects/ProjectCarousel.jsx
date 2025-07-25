@@ -19,7 +19,7 @@ const ProjectCarousel = ({ project }) => (
                       <li key={index}>{item}</li>
                     ))}
                   </ul>
-                ) : label === "Demo" || label === "Github" ? (
+                ) : label === "Github_FE" || label === "Github_BE" ? (
                   <a href={value} target="_blank" rel="noreferrer">
                     {value}
                   </a>
