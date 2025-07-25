@@ -16,7 +16,7 @@ import { far } from "@fortawesome/free-regular-svg-icons";
 library.add(fab, fas, far);
 
 function App() {
-  const [isSidebarVisible, setIsSidebarVisible] = useState(false);
+  const [isSidebarVisible, setIsSidebarVisible] = useState(true);
   const [isLoading, setIsLoading] = useState(true);
   const [isMobileOrTablet, setIsMobileOrTablet] = useState(
     window.innerWidth < 1114

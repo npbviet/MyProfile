@@ -58,11 +58,24 @@ const About = () => {
                 <b>Address</b>: DaNang
               </li>
               <li>
-                <b>GitHub</b> : https://github.com/npbviet
+                <b>GitHub</b> :{" "}
+                <a
+                  href="https://github.com/npbviet"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  github.com/npbviet
+                </a>
               </li>
             </ul>
 
-            <Button className={styles.downloadBtn}>Download CV</Button>
+            <a
+              href="https://drive.google.com/file/d/1KDrbTE2KYIivyM6vlFgVBAddPKglZyo4/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button className={styles.downloadBtn}>Download CV</Button>
+            </a>
           </div>
         </div>
       </div>
