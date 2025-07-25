@@ -9,3 +9,10 @@
   margin-left: 0;
   width: 100%;
 }
+
+/* === MEDIA QUERIES BỔ SUNG CHO MOBILE === */
+@media (max-width: 767px) {
+  .mainContent h2 {
+    font-size: 28px;
+  }
+}

@@ -35,7 +35,7 @@
 
 /* ===== Edu Content Section ===== */
 .eduContent {
-  width: 100%;
+  width: 95%;
   padding: 0 0 2rem 2rem;
 }
 
@@ -70,7 +70,7 @@
 
 /* ===== school Details (Right Column) ===== */
 .schoolDetail {
-  width: 80%;
+  width: 75%;
   padding: 0 0 0 10px;
 }
 
@@ -94,17 +94,35 @@
 }
 
 /* ===== Responsive Mobile View ===== */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+  .education {
+    padding: 2rem;
+  }
+  .eduHeader {
+    margin-bottom: 0;
+  }
+
   .schoolItem {
     flex-direction: column;
   }
 
-  .timeline,
+  .timeLine,
   .schoolDetail {
     width: 100%;
   }
+  .timeLine h5 {
+    margin: 0;
+  }
+  .schoolDetail {
+    padding-left: 0;
+  }
+}
 
-  .nameSchool::before {
-    left: 0;
+@media (max-width: 375px) {
+  .eduContent {
+    padding: 0 1rem;
+  }
+  .schoolItem {
+    gap: 0;
   }
 }

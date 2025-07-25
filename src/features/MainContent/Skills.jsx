@@ -4,8 +4,8 @@ const Skills = () => {
   return (
     <div id="languagesSkills" className={styles.languagesSkills}>
       <div className={styles.skillsHeader}>
-        <h2>Language & Skills</h2>
-        <p>Technical skills and language proficiency</p>
+        <h2>Languages & Skills</h2>
+        <p>Technical skills and languages</p>
       </div>
 
       <div className={styles.skillsContent}>

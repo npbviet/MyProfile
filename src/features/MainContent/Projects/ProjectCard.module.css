@@ -52,3 +52,10 @@
   margin-right: 0.5rem;
   color: var(--secondary-color);
 }
+
+/* === MEDIA QUERIES BỔ SUNG CHO MOBILE === */
+@media (max-width: 427px) {
+  .card {
+    max-width: 260px;
+  }
+}

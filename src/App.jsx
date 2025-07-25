@@ -18,20 +18,37 @@ library.add(fab, fas, far);
 function App() {
   const [isSidebarVisible, setIsSidebarVisible] = useState(true);
   const [isLoading, setIsLoading] = useState(true);
+  const [isMobileOrTablet, setIsMobileOrTablet] = useState(
+    window.innerWidth < 1114
+  );
 
   const toggleSidebar = () => {
     setIsSidebarVisible(!isSidebarVisible);
   };
 
+  // Detect first load and window resize
   useEffect(() => {
-    // Khi toàn bộ tài nguyên đã tải xong (hình ảnh, font, v.v.)
+    if (window.innerWidth < 1114) {
+      setIsSidebarVisible(false);
+    }
+
+    const handleResize = () => {
+      setIsMobileOrTablet(window.innerWidth < 1114);
+    };
+
+    window.addEventListener("resize", handleResize);
+
     const handleLoad = () => setIsLoading(false);
     if (document.readyState === "complete") {
       setIsLoading(false);
     } else {
       window.addEventListener("load", handleLoad);
-      return () => window.removeEventListener("load", handleLoad);
     }
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      window.removeEventListener("load", handleLoad);
+    };
   }, []);
 
   if (isLoading) return <LoadingScreen />;
@@ -39,11 +56,19 @@ function App() {
   return (
     <div className="app-container">
       {isSidebarVisible && <Sidebar toggleSidebar={toggleSidebar} />}
+
       <MainContent
         toggleSidebar={toggleSidebar}
         isSidebarVisible={isSidebarVisible}
       />
+
+      {/* Lớp phủ mờ khi sidebar mở trên mobile */}
+      {isMobileOrTablet && isSidebarVisible && (
+        <div className="main-overlay" onClick={toggleSidebar}></div>
+      )}
+
       <ScrollToTopButton />
+
       {!isSidebarVisible && (
         <CmtBtn
           className="btnSidebar"

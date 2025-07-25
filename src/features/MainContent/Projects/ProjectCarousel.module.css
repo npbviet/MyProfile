@@ -38,7 +38,6 @@
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
 }
 
-/* Lưới mô tả */
 .descriptionGrid {
   display: grid;
   grid-template-columns: 12rem 1fr;
@@ -65,6 +64,7 @@
 @media (max-width: 768px) {
   .descriptionGrid {
     grid-template-columns: 1fr;
+    padding: 0 1rem;
   }
 
   .projectVideo video {

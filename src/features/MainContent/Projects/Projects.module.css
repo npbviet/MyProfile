@@ -53,7 +53,7 @@
   border: none;
   outline: none;
   cursor: pointer;
-  z-index: 4;
+  z-index: 5;
   width: 40px;
   height: 40px;
   display: flex;
@@ -62,11 +62,11 @@
 }
 
 .arrowLeft {
-  left: 17rem;
+  left: 27rem;
 }
 
 .arrowRight {
-  right: 17rem;
+  right: 27rem;
 }
 
 .arrowLeft:focus,
@@ -107,5 +107,44 @@
   }
   100% {
     transform: translateX(0);
+  }
+}
+/* === MEDIA QUERIES BỔ SUNG CHO LAPTOP === */
+@media (max-width: 1440px) {
+  .arrowLeft {
+    left: 15rem;
+  }
+  .arrowRight {
+    right: 15rem;
+  }
+}
+@media (max-width: 1439px) {
+  .arrowLeft {
+    left: 10rem;
+  }
+  .arrowRight {
+    right: 10rem;
+  }
+}
+/* === MEDIA QUERIES BỔ SUNG CHO TABLET === */
+@media (max-width: 1279px) {
+  .arrowLeft {
+    left: 5%;
+  }
+  .arrowRight {
+    right: 5%;
+  }
+}
+/* === MEDIA QUERIES BỔ SUNG CHO MOBILE === */
+@media (max-width: 767px) {
+  .arrowLeft {
+    left: 0%;
+  }
+  .arrowRight {
+    right: 0%;
+  }
+
+  .projects {
+    padding: 2rem 0 0 2rem;
   }
 }

@@ -56,33 +56,9 @@ const projectData = [
     videoUrl: "...",
     image: AdminShoppingImg,
   },
+
   {
-    title: "2. Movie Watch Website",
-    subtitle: "",
-    icon: "fa-solid fa-film",
-    brief: "A platform to explore and watch movie trailers...",
-    details: {
-      Describe:
-        "Users can browse movies by genre, view trailers, read descriptions, and explore cast information.",
-      "Typical functions": [
-        "Trailer streaming (YouTube API)",
-        "Genre-based browsing",
-        "Movie details and ratings",
-        "Search functionality",
-        "Cast information",
-      ],
-      Frontend: "React.js, Vite",
-      Backend: "Node.js + Express, MongoDB",
-      "Team size": "1 (solo)",
-      "Supporting tools":
-        "Git, Postman, Redux, React Developer Tools, Firebase,...",
-      Github: "https://github.com/yourname/movie-trailer-app",
-    },
-    videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4",
-    image: MovieAppImg,
-  },
-  {
-    title: "3.1. Booking Website",
+    title: "2.1. Booking Website",
     subtitle: "(Client App)",
     icon: "fa-solid fa-calendar-check",
     brief: "A booking application for scheduling services online...",
@@ -107,7 +83,7 @@ const projectData = [
     image: ClientBookingImg,
   },
   {
-    title: "3.2. Booking Website",
+    title: "2.2. Booking Website",
     subtitle: "(Admin App)",
     icon: "fa-solid fa-user-gear",
     brief: "A control panel to manage services...",
@@ -131,7 +107,31 @@ const projectData = [
     videoUrl: "...",
     image: AdminBookingImg,
   },
-
+  {
+    title: "3. Movie Watch Website",
+    subtitle: "",
+    icon: "fa-solid fa-film",
+    brief: "A platform to explore and watch movie trailers...",
+    details: {
+      Describe:
+        "Users can browse movies by genre, view trailers, read descriptions, and explore cast information.",
+      "Typical functions": [
+        "Trailer streaming (YouTube API)",
+        "Genre-based browsing",
+        "Movie details and ratings",
+        "Search functionality",
+        "Cast information",
+      ],
+      Frontend: "React.js, Vite",
+      Backend: "Node.js + Express, MongoDB",
+      "Team size": "1 (solo)",
+      "Supporting tools":
+        "Git, Postman, Redux, React Developer Tools, Firebase,...",
+      Github: "https://github.com/yourname/movie-trailer-app",
+    },
+    videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4",
+    image: MovieAppImg,
+  },
   {
     title: "4. Order Food App",
     subtitle: "",

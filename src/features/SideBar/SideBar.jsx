@@ -1,38 +1,19 @@
 import styles from "./SideBar.module.css";
 import avatar from "../../assets/images/default-avatar.jpg";
 import CmtBtn from "../../components/CmtBtn/CmtBtn";
+import socialLinks from "../../data/socialLinks";
+import menuLinks from "../../data/menuLinks";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-const socialLinks = [
-  {
-    icon: ["fab", "facebook-f"],
-    url: "https://facebook.com/npbviet",
-  },
-  {
-    icon: ["fab", "twitter"],
-    url: "#",
-  },
-  {
-    icon: ["fab", "github"],
-    url: "https://github.com/npbviet",
-  },
-  {
-    icon: ["fab", "linkedin-in"],
-    url: "#",
-  },
-  {
-    icon: ["fab", "instagram"],
-    url: "#",
-  },
-];
 
 const Sidebar = ({ toggleSidebar }) => {
   return (
     <div className={styles.sidebar}>
+      {/* Avatar + Btn toggle*/}
       <div className={styles.avatarImg}>
         <img src={avatar} alt="Avatar" className={styles.avatar} />
       </div>
+
       <CmtBtn
         className={styles.btnHideSidebar}
         onClick={toggleSidebar}
@@ -40,49 +21,39 @@ const Sidebar = ({ toggleSidebar }) => {
         label="hide"
       />
 
+      {/* Navigation links */}
       <nav>
         <ul>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#experience">Experience</a>
-          </li>
-          <li>
-            <a href="#education">Education</a>
-          </li>
-          <li>
-            <a href="#languagesSkills">Languages & Skills</a>
-          </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
+          {menuLinks.map(({ label, anchor }) => (
+            <li key={anchor}>
+              <a href={anchor} onClick={toggleSidebar}>
+                {label}
+              </a>
+            </li>
+          ))}
         </ul>
       </nav>
 
+      {/* Footer with social icons */}
       <div className={styles.footer}>
         <div className={styles.footerTitle}>My contact</div>
-        {socialLinks.map((item, index) => {
-          const hasLink = item.url && item.url !== "#";
+        {socialLinks.map(({ icon, url }, index) => {
+          const isActive = url && url !== "#";
 
           return (
             <a
               key={index}
-              href={item.url || "#"}
-              {...(hasLink
-                ? {
-                    target: "_blank",
-                    rel: "noopener noreferrer",
-                  }
-                : {})}
+              href={url}
               className={styles.iconLink}
               onClick={(e) => {
-                if (!hasLink) {
-                  e.preventDefault(); // chặn hành vi click nếu chưa có link
-                }
+                if (!isActive) e.preventDefault();
               }}
+              {...(isActive && {
+                target: "_blank",
+                rel: "noopener noreferrer",
+              })}
             >
-              <FontAwesomeIcon icon={item.icon} className={styles.icon} />
+              <FontAwesomeIcon icon={icon} className={styles.icon} />
             </a>
           );
         })}

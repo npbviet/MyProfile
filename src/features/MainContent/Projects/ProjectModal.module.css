@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 3;
+  z-index: 4;
 }
 
 .modal {
@@ -22,11 +22,18 @@
 }
 
 .modal h2 {
-  font-size: 32px;
+  font-size: 28px;
   margin: 0;
   position: relative; /* Cần dòng này để ::before căn theo h2 */
   padding-left: 15px;
 }
+
+.modal .subtitle {
+  font-size: 24px;
+  color: #666;
+  margin-left: 2rem;
+}
+
 .modal h2::before {
   content: "";
   position: absolute;
@@ -79,4 +86,24 @@
   border-radius: 10px;
   border: 2px solid transparent; /* Tạo khoảng cách */
   background-clip: content-box;
+}
+
+/* === MEDIA QUERIES BỔ SUNG CHO TABLET === */
+@media (max-width: 1279px) {
+  .modal {
+    width: 70%;
+  }
+}
+/* === MEDIA QUERIES BỔ SUNG CHO MOBILE === */
+@media (max-width: 767px) {
+  .modal {
+    width: 100%;
+    padding-top: 4rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .closeBtn {
+    top: 2rem;
+  }
 }

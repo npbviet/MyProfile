@@ -68,3 +68,14 @@
 .section li {
   margin-bottom: 0.75rem;
 }
+@media (max-width: 767px) {
+  .languagesSkills {
+    padding: 2rem;
+  }
+
+  .skillsContent {
+    flex-direction: column;
+    margin-left: 0;
+    gap: 2rem;
+  }
+}

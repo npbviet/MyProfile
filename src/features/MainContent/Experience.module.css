@@ -35,7 +35,7 @@
 
 /* ===== Job Content Section ===== */
 .jobContent {
-  width: 100%;
+  width: 95%;
   padding: 0 0 2rem 2rem;
 }
 
@@ -70,7 +70,7 @@
 
 /* ===== Work Details (Right Column) ===== */
 .workDetail {
-  width: 80%;
+  width: 75%;
   padding: 0 0 0 10px;
 }
 
@@ -94,17 +94,41 @@
 }
 
 /* ===== Responsive Mobile View ===== */
-@media (max-width: 768px) {
+
+@media (max-width: 767px) {
+  .experience {
+    padding: 2rem;
+  }
+  .expHeader {
+    margin-bottom: 0;
+  }
+  .jobContent {
+    max-width: 90%;
+  }
   .workItem {
     flex-direction: column;
   }
 
-  .timeline,
+  .timeLine,
   .workDetail {
     width: 100%;
   }
-
+  .timeLine h5 {
+    margin: 0;
+  }
+  .workDetail {
+    padding-left: 0;
+  }
   .nameWork::before {
     left: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .jobContent {
+    padding: 0 1rem;
+  }
+  .workItem {
+    gap: 0;
   }
 }

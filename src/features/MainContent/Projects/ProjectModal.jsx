@@ -9,7 +9,8 @@ const ProjectModal = ({ isOpen, onClose, slide }) => {
     <div className={styles.overlay}>
       <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
         <h2>
-          {slide.title} {slide.subtitle}
+          {slide.title} <br />
+          <span className={styles.subtitle}>{slide.subtitle}</span>
         </h2>
         <button className={styles.closeBtn} onClick={onClose}>
           <FontAwesomeIcon icon="fa-solid fa-xmark" />
