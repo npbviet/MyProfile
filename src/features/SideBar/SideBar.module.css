@@ -54,8 +54,8 @@
 }
 .sidebar .footer {
   margin: 0 0.5rem;
-  position: fixed;
-  bottom: 3rem;
+  position: absolute;
+  bottom: 4rem;
 }
 .sidebar .icon {
   padding: 0.75rem;
