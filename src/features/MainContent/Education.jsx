@@ -5,7 +5,6 @@ const Education = () => {
     <div id="education" className={styles.education}>
       <div className={styles.eduHeader}>
         <h2>Education</h2>
-        <p>My academic background</p>
       </div>
 
       <div className={styles.eduContent}>
@@ -19,7 +18,8 @@ const Education = () => {
             </div>
             <div className={styles.schoolContent}>
               <h5>
-                - Graduated from FUNiX's Business certificate program.
+                - Completed the FUNiX Web Fullstack Developer Certificate
+                Program.
                 <br />- GPA: 8.4 /10
               </h5>
             </div>
