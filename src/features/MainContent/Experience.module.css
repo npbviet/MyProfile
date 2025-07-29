@@ -58,7 +58,7 @@
   font-style: italic;
   font-weight: normal;
   padding: 10px 0;
-  color: gray;
+  color: var(--text-color);
 }
 
 .recent {
@@ -90,7 +90,7 @@
   font-size: 18px;
   line-height: 1.8;
   font-weight: normal;
-  color: gray;
+  color: var(--text-color);
 }
 
 /* ===== Responsive Mobile View ===== */

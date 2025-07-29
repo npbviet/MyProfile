@@ -29,8 +29,11 @@ const Experience = () => {
                 <br />- Assisted with backend logic, database design, and CRUD
                 operations using SQL and NoSQL.
                 <br />- Provided feedback and 1-on-1 sessions, improving student
-                project success rat
+                project success rate.
                 <br />
+                <strong>Skills learned:</strong> Frontend & backend development,
+                code reviewing, mentoring, communication, debugging, MongoDB,
+                SQL, RESTful APIs, deployment strategies.
               </h5>
             </div>
           </div>
@@ -55,7 +58,10 @@ const Experience = () => {
                 - Worked on areas including health, nutrition, child protection,
                 livelihoods, and sponsorship engagement.
                 <br />- Coordinated with local stakeholders to ensure
-                sustainable program delivery.
+                sustainable program delivery. <br />
+                <strong>Skills learned:</strong> Project management, community
+                engagement, budgeting, report writing, monitoring & evaluation,
+                cross-sectoral collaboration, leadership, teamwork.
               </h5>
             </div>
           </div>
@@ -79,6 +85,10 @@ const Experience = () => {
                 <br />- Educated over 100 patients on immunization and nutrition
                 for maternal and child health.
                 <br />- Supported data collection for immunization records.
+                <br />
+                <strong>Skills learned:</strong> Health communication, public
+                health education, data entry & analysis, clinical workflow,
+                patient interaction, time management.
               </h5>
             </div>
           </div>

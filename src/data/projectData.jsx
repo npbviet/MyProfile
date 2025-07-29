@@ -78,7 +78,7 @@ const projectData = [
       Backend: "Node.js + Express, MongoDB",
       "Team size": "1 (solo)",
       "Supporting tools":
-        "Git, Postman, Redux, React Developer Tools, Firebase,...",
+        "Git, Postman, React Context, React Developer Tools, Firebase,...",
       Github_FE: "https://github.com/npbviet/BookingClientApp",
       Github_BE: "https://github.com/npbviet/BookingServer",
     },
@@ -104,7 +104,7 @@ const projectData = [
       Backend: "Node.js + Express, MongoDB",
       "Team size": "1 (solo)",
       "Supporting tools":
-        "Git, Postman, Redux, React Developer Tools, Firebase,...",
+        "Git, Postman, React Context, React Developer Tools, Firebase,...",
       Github_FE: "https://github.com/npbviet/BookingAdminApp",
       Github_BE: "https://github.com/npbviet/BookingServer",
     },
@@ -129,8 +129,7 @@ const projectData = [
       Frontend: "React.js, Vite",
       Backend: "Node.js + Express, MongoDB",
       "Team size": "1 (solo)",
-      "Supporting tools":
-        "Git, Postman, Redux, React Developer Tools, Firebase,...",
+      "Supporting tools": "Git, Postman,  React Developer Tools, Firebase,...",
       Github_FE: "https://github.com/npbviet/MovieAppClient",
       Github_BE: "https://github.com/npbviet/MovieAppServer",
     },
@@ -155,8 +154,7 @@ const projectData = [
       Frontend: "React.js, Vite",
       Backend: "Node.js + Express, MongoDB",
       "Team size": "1 (solo)",
-      "Supporting tools":
-        "Git, Postman, Redux, React Developer Tools, Firebase,...",
+      "Supporting tools": "Git, React Developer Tools, ...",
       Github_FE: "https://github.com/npbviet/Order-Food",
     },
     videoUrl: "...",

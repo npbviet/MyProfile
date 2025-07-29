@@ -49,6 +49,37 @@ const Skills = () => {
             </li>
           </ul>
         </div>
+
+        {/* Soft Skills Section */}
+        <div className={styles.softSkills}>
+          <div className={styles.section}>
+            <h3>Soft Skills</h3>
+            <ul>
+              <li>
+                <strong>Communication:</strong> Clear and effective in
+                explaining ideas.
+              </li>
+              <li>
+                <strong>Teamwork:</strong> Collaborates well in groups.
+              </li>
+              <li>
+                <strong>Problem-solving:</strong> Quick to identify and solve
+                issues.
+              </li>
+              <li>
+                <strong>Project coordination:</strong> Able to plan and manage
+                tasks effectively.
+              </li>
+              <li>
+                <strong>Adaptability:</strong> Comfortable with change and
+                learning.
+              </li>
+              <li>
+                <strong>Mentoring:</strong> Supports and guides others.
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   );

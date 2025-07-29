@@ -36,16 +36,16 @@
 /* ===== Skills Content Section ===== */
 .skillsContent {
   margin-left: 2rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 4rem;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 4fr 3fr;
+  gap: 2rem;
   transition: all 0.3s ease-in-out;
 }
-
+/* .softSkills {
+  grid-column: 2;
+  grid-row: 1 / 3;
+} */
 .section {
-  flex: 1;
   min-width: 280px;
 }
 
@@ -68,12 +68,14 @@
 .section li {
   margin-bottom: 0.75rem;
 }
+
 @media (max-width: 767px) {
   .languagesSkills {
     padding: 2rem;
   }
 
   .skillsContent {
+    display: flex;
     flex-direction: column;
     margin-left: 0;
     gap: 2rem;

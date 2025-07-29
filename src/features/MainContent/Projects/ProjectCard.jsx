@@ -10,6 +10,15 @@ const ProjectCard = ({ project, onClick }) => (
     </h3>
     <img src={project.image} alt={project.title} className={styles.thumbnail} />
     <p>{project.brief}</p>
+    <p>
+      <strong>FE:</strong> {project.details.Frontend}
+    </p>
+    <p>
+      <strong>BE:</strong> {project.details.Backend}
+    </p>
+    <p>
+      <strong>Supporting Tools:</strong> {project.details["Supporting tools"]}
+    </p>
     <span className={styles.details}>→ See details</span>
   </div>
 );
