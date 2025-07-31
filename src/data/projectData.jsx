@@ -29,7 +29,7 @@ const projectData = [
       Github_FE: "https://github.com/npbviet/ECommerceClient",
       Github_BE: "https://github.com/npbviet/ECommerceServer",
     },
-    videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4",
+    videoUrl: "https://youtu.be/vkkLqVUXwTU",
     image: ClientShoppingImg,
   },
   {
@@ -55,7 +55,7 @@ const projectData = [
       Github_FE: "https://github.com/npbviet/ECommerceAdmin",
       Github_BE: "https://github.com/npbviet/ECommerceServer",
     },
-    videoUrl: "...",
+    videoUrl: "https://youtu.be/YnZDnpijQmc",
     image: AdminShoppingImg,
   },
 
@@ -82,7 +82,7 @@ const projectData = [
       Github_FE: "https://github.com/npbviet/BookingClientApp",
       Github_BE: "https://github.com/npbviet/BookingServer",
     },
-    videoUrl: "...",
+    videoUrl: "https://youtu.be/koxbJmSzW3k",
     image: ClientBookingImg,
   },
   {
@@ -108,7 +108,7 @@ const projectData = [
       Github_FE: "https://github.com/npbviet/BookingAdminApp",
       Github_BE: "https://github.com/npbviet/BookingServer",
     },
-    videoUrl: "...",
+    videoUrl: "https://youtu.be/Ot4lefJkYZs",
     image: AdminBookingImg,
   },
   {
@@ -133,7 +133,7 @@ const projectData = [
       Github_FE: "https://github.com/npbviet/MovieAppClient",
       Github_BE: "https://github.com/npbviet/MovieAppServer",
     },
-    videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4",
+    videoUrl: "https://youtu.be/OhPg01TYJjQ",
     image: MovieAppImg,
   },
   {
@@ -157,7 +157,7 @@ const projectData = [
       "Supporting tools": "Git, React Developer Tools, ...",
       Github_FE: "https://github.com/npbviet/Order-Food",
     },
-    videoUrl: "...",
+    videoUrl: "https://youtu.be/MvWfVTcnhkE",
     image: OrderFoodImg,
   },
 ];
