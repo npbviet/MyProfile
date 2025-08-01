@@ -6,7 +6,22 @@ const ProjectCarousel = ({ project }) => (
     <div className={styles.carouselContent}>
       <div className={styles.projectText}>
         <div className={styles.projectVideo}>
-          <video src={project.videoUrl} controls />
+          {project.videoUrl.includes("youtu") ? (
+            <iframe
+              width="100%"
+              height="315"
+              src={project.videoUrl.replace(
+                "youtu.be",
+                "www.youtube.com/embed"
+              )}
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          ) : (
+            <video src={project.videoUrl} controls />
+          )}
         </div>
         <div className={styles.descriptionGrid}>
           {Object.entries(project.details).map(([label, value]) => (
