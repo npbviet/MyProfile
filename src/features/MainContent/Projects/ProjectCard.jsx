@@ -1,4 +1,5 @@
 import styles from "./ProjectCard.module.css";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ProjectCard = ({ project, onClick }) => (

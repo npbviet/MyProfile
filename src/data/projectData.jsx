@@ -36,16 +36,17 @@ const projectData = [
     title: "1.2. Website E-commerce",
     subtitle: "(Admin App)",
     icon: "fa-solid fa-user-gear",
-    brief: "A management dashboard for products, orders, and users...",
+    brief: "A management dashboard for products, orders, ...",
     details: {
       Describe:
-        "Admin panel for managing the e-commerce platform, including product CRUD, order tracking, and user management.",
+        "Admin panel for managing the e-commerce platform, including product CRUD, order tracking, user management, and real-time chat with customers using Socket.io.",
       "Typical functions": [
         "Role-based access control",
         "Add/Edit/Delete products",
         "Manage orders & users",
         "Sales statistics dashboard",
         "Image upload & preview",
+        "Real-time chat with customers",
       ],
       Frontend: "React.js, Vite, Socket.io, Boostrap",
       Backend: "Node.js + Express, MongoDB, Socket.io",
@@ -68,11 +69,10 @@ const projectData = [
       Describe:
         "Users can browse available services, choose time slots, make appointments, and review their booking history.",
       "Typical functions": [
-        "Service selection & time slot",
         "User login/register",
+        "Service selection & time slot",
         "Booking confirmation",
         "Booking history",
-        "Responsive UI",
       ],
       Frontend: "React.js, Vite",
       Backend: "Node.js + Express, MongoDB",
@@ -124,7 +124,6 @@ const projectData = [
         "Genre-based browsing",
         "Movie details and ratings",
         "Search functionality",
-        "Cast information",
       ],
       Frontend: "React.js, Vite",
       Backend: "Node.js + Express, MongoDB",
@@ -144,13 +143,7 @@ const projectData = [
     details: {
       Describe:
         "Users can browse menus by restaurants, place orders, and track order status in real-time.",
-      "Typical functions": [
-        "Browse food by restaurant",
-        "Cart and checkout",
-        "Track order status",
-        "Login/register",
-        "Location-based suggestions",
-      ],
+      "Typical functions": ["Browse food by restaurant", "Cart and checkout"],
       Frontend: "React.js, Vite",
       Backend: "Node.js + Express, MongoDB",
       "Team size": "1 (solo)",
