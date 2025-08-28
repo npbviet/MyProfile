@@ -70,7 +70,7 @@ const About = () => {
             </ul>
 
             <a
-              href="https://drive.google.com/file/d/1j0ku7trOccAjWUgoSS43lvVIt1lDiUyw/view?usp=sharing"
+              href="https://drive.google.com/file/d/1rR_bSjCEhBPvUGfzPgFieLpoN7Qh29g4/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
