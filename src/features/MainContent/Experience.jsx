@@ -12,8 +12,33 @@ const Experience = () => {
         <div className={styles.workItem}>
           <div className={styles.timeLine}>
             <h5>
-              06/2023 - <span className={styles.recent}>Present</span>
+              10/2025 - <span className={styles.recent}>Present</span>
             </h5>
+          </div>
+          <div className={styles.workDetail}>
+            <div className={styles.nameWork}>
+              <h4>
+                Fullstack Web Developer - Intern <br />
+                at AmazingIT
+              </h4>
+            </div>
+            <div className={styles.workContent}>
+              <h5>
+                - Contributed to developing and improving the company’s website
+                frontend. <br />
+                - Customized and enhanced an internal CRM web application to
+                meet business requirements. <br />
+                - Collaborated with team members to optimize UI components and
+                improve user experience. <br />
+                <strong>Skills learned:</strong> Docker, Git, PHP, frontend
+                development, teamwork, problem-solving.
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div className={styles.workItem}>
+          <div className={styles.timeLine}>
+            <h5>06/2023 - 08/2025</h5>
           </div>
           <div className={styles.workDetail}>
             <div className={styles.nameWork}>
