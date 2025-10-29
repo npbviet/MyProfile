@@ -92,7 +92,7 @@ const Experience = () => {
           </div>
         </div>
 
-        {/* <div className={styles.workItem}>
+        <div className={styles.workItem}>
           <div className={styles.timeLine}>
             <h5>09/2018 - 03/2019</h5>
           </div>
@@ -117,7 +117,7 @@ const Experience = () => {
               </h5>
             </div>
           </div>
-        </div> */}
+        </div>
       </div>
     </div>
   );
