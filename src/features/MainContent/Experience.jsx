@@ -30,7 +30,7 @@ const Experience = () => {
                 meet business requirements. <br />
                 - Collaborated with team members to optimize UI components and
                 improve user experience. <br />
-                <strong>Skills learned:</strong> Docker, Git, PHP, frontend
+                <strong>Skills learned:</strong> Docker, Git, NextJS, frontend
                 development, teamwork, problem-solving.
               </h5>
             </div>
@@ -103,6 +103,7 @@ const Experience = () => {
                 at Danang Centers for Disease Control
               </h4>
             </div>
+
             <div className={styles.workContent}>
               <h5>
                 - Assisted in coordinating vaccination schedules and improving

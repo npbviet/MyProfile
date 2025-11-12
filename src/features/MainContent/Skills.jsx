@@ -37,15 +37,16 @@ const Skills = () => {
           <h3>Technical Skills</h3>
           <ul>
             <li>
-              <strong>Frontend:</strong> HTML5, CSS3, JavaScript, ReactJS
+              <strong>Frontend:</strong> HTML5, CSS3, JavaScript, ReactJS,
+              NextJS
             </li>
             <li>
               <strong>Backend:</strong> Node.js (Express), MongoDB, MySQL,
               RESTful API
             </li>
             <li>
-              <strong>Others:</strong> Git & GitHub, Responsive Web Design,
-              Figma (basic)
+              <strong>Others:</strong> Git & GitHub, Docker, Responsive Web
+              Design, Figma (basic)
             </li>
           </ul>
         </div>
