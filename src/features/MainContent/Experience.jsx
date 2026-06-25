@@ -19,7 +19,7 @@ const Experience = () => {
             <div className={styles.nameWork}>
               <h4>
                 Software Quality Control (QC) Engineer <br />
-                at Financial & Tech Corp
+                at IT Dragons
               </h4>
             </div>
             <div className={styles.workContent}>
