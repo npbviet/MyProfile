@@ -12,8 +12,42 @@ const Experience = () => {
         <div className={styles.workItem}>
           <div className={styles.timeLine}>
             <h5>
-              10/2025 - <span className={styles.recent}>Present</span>
+              12/2026 - <span className={styles.recent}>Present</span>
             </h5>
+          </div>
+          <div className={styles.workDetail}>
+            <div className={styles.nameWork}>
+              <h4>
+                Software Quality Control (QC) Engineer <br />
+                at Financial & Tech Corp
+              </h4>
+            </div>
+            <div className={styles.workContent}>
+              <h5>
+                - Planned and executed comprehensive testing for a Credit
+                Scoring system in the Banking domain, ensuring high accuracy in
+                risk assessment algorithms. <br />
+                - Performed functional, integration, and API testing for a
+                Banking Payment Network establishment project, verifying secure
+                transactions and data integrity. <br />
+                - Led the end-to-end testing lifecycle for an internal HRM
+                system, covering payroll, employee management, and access
+                control modules. <br />
+                - AI Integration: Utilized AI-powered tools (ChatGPT/Copilot) to
+                optimize test case generation, automate repetitive test data
+                creation, and accelerate bug analysis, reducing overall testing
+                time by 30%. <br />
+                Skills learned: Banking & Fintech Domain, API Testing (Postman),
+                Credit Scoring Validation, HRM Workflows, AI-driven Testing,
+                Test Case Design, Defect Tracking.
+              </h5>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.workItem}>
+          <div className={styles.timeLine}>
+            <h5>10/2025 - 12/2025</h5>
           </div>
           <div className={styles.workDetail}>
             <div className={styles.nameWork}>
@@ -24,18 +58,22 @@ const Experience = () => {
             </div>
             <div className={styles.workContent}>
               <h5>
-                - Contributed to developing and improving the company’s website
-                frontend. <br />
-                - Customized and enhanced an internal CRM web application to
-                meet business requirements. <br />
-                - Collaborated with team members to optimize UI components and
-                improve user experience. <br />
-                <strong>Skills learned:</strong> Docker, Git, NextJS, frontend
-                development, teamwork, problem-solving.
+                - Participated in frontend development while actively performing
+                unit testing and code reviews to ensure UI/UX consistency.{" "}
+                <br />
+                - Conducted functional and regression testing on an internal CRM
+                web application to identify bugs and alignment with business
+                requirements. <br />
+                - Collaborated closely with the team to debug, optimize UI
+                components, and verify fixes, ensuring a seamless user
+                experience. <br />
+                Skills learned: NextJS, Frontend Testing, Regression Testing,
+                UI/UX Verification, Git, Docker, Debugging, Problem-solving.
               </h5>
             </div>
           </div>
         </div>
+
         <div className={styles.workItem}>
           <div className={styles.timeLine}>
             <h5>06/2023 - 08/2025</h5>
@@ -49,16 +87,17 @@ const Experience = () => {
             </div>
             <div className={styles.workContent}>
               <h5>
-                - Mentored students to build and deploy web applications based
-                on provided UI/UX mockups.
-                <br />- Assisted with backend logic, database design, and CRUD
-                operations using SQL and NoSQL.
-                <br />- Provided feedback and 1-on-1 sessions, improving student
-                project success rate.
+                - Evaluated and performed rigorous code reviews on students' web
+                applications based on UI/UX mockups and technical requirements.{" "}
                 <br />
-                <strong>Skills learned:</strong> Frontend & backend development,
-                code reviewing, mentoring, communication, debugging, MongoDB,
-                SQL, RESTful APIs, deployment strategies.
+                - Tested and verified backend logic, database design
+                (SQL/NoSQL), and RESTful APIs (CRUD operations) to ensure system
+                stability. <br />- Mentored students on debugging techniques,
+                edge-case handling, and deployment strategies, improving project
+                success rates. <br />
+                Skills learned: Frontend & backend development, code reviewing,
+                mentoring, communication, debugging, MongoDB, SQL, RESTful APIs,
+                deployment strategies.
               </h5>
             </div>
           </div>
@@ -77,44 +116,16 @@ const Experience = () => {
             </div>
             <div className={styles.workContent}>
               <h5>
-                - Managed 4 community-based projects across 2 communes, with an
-                annual budget of over $70,000, impacting 1200+ children.
-                <br />
-                - Worked on areas including health, nutrition, child protection,
-                livelihoods, and sponsorship engagement.
-                <br />- Coordinated with local stakeholders to ensure
-                sustainable program delivery. <br />
-                <strong>Skills learned:</strong> Project management, community
-                engagement, budgeting, report writing, monitoring & evaluation,
-                cross-sectoral collaboration, leadership, teamwork.
-              </h5>
-            </div>
-          </div>
-        </div>
-
-        <div className={styles.workItem}>
-          <div className={styles.timeLine}>
-            <h5>09/2018 - 03/2019</h5>
-          </div>
-          <div className={styles.workDetail}>
-            <div className={styles.nameWork}>
-              <h4>
-                Intern <br />
-                at Danang Centers for Disease Control
-              </h4>
-            </div>
-
-            <div className={styles.workContent}>
-              <h5>
-                - Assisted in coordinating vaccination schedules and improving
-                clinic efficiency.
-                <br />- Educated over 100 patients on immunization and nutrition
-                for maternal and child health.
-                <br />- Supported data collection for immunization records.
-                <br />
-                <strong>Skills learned:</strong> Health communication, public
-                health education, data entry & analysis, clinical workflow,
-                patient interaction, time management.
+                - Managed 4 community-based projects across 2 communes, ensuring
+                strict compliance with budget ($70,000+) and operational
+                guidelines. <br />- Conducted regular Monitoring & Evaluation
+                (M&E) to assess project quality, track metrics, and deliver
+                detailed reports. <br />
+                - Coordinated with diverse stakeholders, demonstrating strong
+                analytical and risk-management skills. <br />
+                Skills learned: Monitoring & Evaluation (M&E), Detail-oriented
+                Mindset, Project Management, Risk Assessment, Collaboration,
+                Leadership.
               </h5>
             </div>
           </div>

@@ -9,44 +9,31 @@ const Skills = () => {
       </div>
 
       <div className={styles.skillsContent}>
-        {/* Languages Section */}
-        <div className={styles.section}>
-          <h3>Languages</h3>
-          <ul>
-            <li>
-              <strong> English (IELTS 5.5 - 6.0):</strong>
-              <div className={styles.subInfo}>
-                Intermediate - Can read technical documents, write emails, and
-                formal reports.
-              </div>
-            </li>
-            <li>
-              <strong> French (DELF B1 - B2 level):</strong>
-
-              <div className={styles.subInfo}>
-                Advanced - Confident in reading, writing, listening, and
-                speaking. Can participate in discussions, meetings, and write
-                formal reports.
-              </div>
-            </li>
-          </ul>
-        </div>
-
         {/* Technical Skills Section */}
         <div className={styles.section}>
           <h3>Technical Skills</h3>
           <ul>
             <li>
-              <strong>Frontend:</strong> HTML5, CSS3, JavaScript, ReactJS,
-              NextJS
+              <strong>Testing & Methodologies:</strong> Functional Testing,
+              Integration Testing, Regression Testing, API Testing, Test Case
+              Design, Defect Tracking, Agile/Scrum
             </li>
             <li>
-              <strong>Backend:</strong> Node.js (Express), MongoDB, MySQL,
-              RESTful API
+              <strong>Testing Tools & AI:</strong> Postman, Jira, GitHub Issues,
+              AI-powered testing tools (ChatGPT, GitHub Copilot for test data &
+              case generation)
             </li>
             <li>
-              <strong>Others:</strong> Git & GitHub, Docker, Responsive Web
-              Design, Figma (basic)
+              <strong>Databases & Backend:</strong> SQL (MySQL), NoSQL
+              (MongoDB), Node.js (Express), RESTful API verification
+            </li>
+            <li>
+              <strong>Frontend & Core Tech:</strong> HTML5, CSS3, JavaScript,
+              ReactJS, NextJS, DevTools (Debugging)
+            </li>
+            <li>
+              <strong>Others:</strong> Git & GitHub, Docker, Figma (UI/UX
+              Review)
             </li>
           </ul>
         </div>
@@ -80,6 +67,29 @@ const Skills = () => {
               </li>
             </ul>
           </div>
+        </div>
+
+        {/* Languages Section */}
+        <div className={styles.section}>
+          <h3>Languages</h3>
+          <ul>
+            <li>
+              <strong> English (IELTS 5.5 - 6.0):</strong>
+              <div className={styles.subInfo}>
+                Intermediate - Can read technical documents, write emails, and
+                formal reports.
+              </div>
+            </li>
+            <li>
+              <strong> French (DELF B1 - B2 level):</strong>
+
+              <div className={styles.subInfo}>
+                Advanced - Confident in reading, writing, listening, and
+                speaking. Can participate in discussions, meetings, and write
+                formal reports.
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

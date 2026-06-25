@@ -18,7 +18,7 @@ const MainContent = ({ isSidebarVisible }) => {
       <Experience />
       <Education />
       <Skills />
-      <Projects />
+      {/* <Projects /> */}
     </div>
   );
 };

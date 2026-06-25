@@ -13,17 +13,18 @@ const About = () => {
       <div className={styles.aboutWrapper}>
         <div className={styles.aboutIntro}>
           Hello! My name is <b>Nguyen Phan Bao Viet</b>. I am a{" "}
-          <b>Fullstack Web Developer</b>.
+          <b>Software QA/QC Engineer</b>.
         </div>
         <div className={styles.aboutDetails}>
           <p>
-            I come from a public health background and have nearly three years
-            of experience working with a non-governmental organization. However,
-            my strong passion for technology inspired me to transition into
-            full-stack web development. Since then, I have been continuously
-            sharpening both my frontend and backend skills. I thrive in
-            creative, collaborative teams and am always eager to contribute and
-            take on new challenges.
+            I come from a public health background with nearly three years of
+            experience in non-governmental organizations, which built my strong
+            analytical and detail-oriented mindset. Driven by a deep passion for
+            technology, I transitioned into software development and built a
+            solid foundation in both frontend and backend systems. With this
+            technical background, I am transitioning into software testing,
+            leveraging my ability to understand code, analyze edge cases, and
+            integrate AI tools to ensure top-tier product quality.
           </p>
         </div>
         <div className={styles.aboutContent}>
@@ -33,10 +34,11 @@ const About = () => {
 
           <div className={styles.careerGoals}>
             <p>
-              <b>Carrer Goals:</b>I am seeking an opportunity to grow as a{" "}
-              <b>Fullstack Web Developer</b>, where I can apply the knowledge
-              and skills I have acquired, continuously improve myself, and
-              successfully complete the tasks entrusted to me.
+              <b>Career Goals:</b> I am seeking an opportunity to thrive as a{" "}
+              <b>Software QA/QC Engineer</b>, where I can leverage my full-stack
+              technical background to perform rigorous testing, optimize QA
+              workflows with AI, and deliver high-quality software solutions
+              that align perfectly with business requirements.
             </p>
           </div>
           <div className={styles.personalInfo}>
