@@ -25,6 +25,24 @@ const Education = () => {
             </div>
           </div>
         </div>
+        <div className={styles.schoolItem}>
+          <div className={styles.timeLine}>
+            <h5>10/2015 - 06/2019</h5>
+          </div>
+          <div className={styles.schoolDetail}>
+            <div className={styles.nameSchool}>
+              <h4>
+                Bachelor - Da Nang University of Medical technology and Pharmacy
+              </h4>
+            </div>
+            <div className={styles.schoolContent}>
+              <h5>
+                - Major: Public Health.
+                <br />- GPA: 3.12 /4.0
+              </h5>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
