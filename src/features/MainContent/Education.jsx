@@ -10,7 +10,7 @@ const Education = () => {
       <div className={styles.eduContent}>
         <div className={styles.schoolItem}>
           <div className={styles.timeLine}>
-            <h5>02/2023 - 05/2025</h5>
+            <h5>02/2020 - 02/2022</h5>
           </div>
           <div className={styles.schoolDetail}>
             <div className={styles.nameSchool}>
@@ -21,25 +21,6 @@ const Education = () => {
                 - Completed the FUNiX Web Fullstack Developer Certificate
                 Program.
                 <br />- GPA: 8.4 /10
-              </h5>
-            </div>
-          </div>
-        </div>
-
-        <div className={styles.schoolItem}>
-          <div className={styles.timeLine}>
-            <h5>10/2015 - 06/2019</h5>
-          </div>
-          <div className={styles.schoolDetail}>
-            <div className={styles.nameSchool}>
-              <h4>
-                Bachelor - Da Nang University of Medical technology and Pharmacy
-              </h4>
-            </div>
-            <div className={styles.schoolContent}>
-              <h5>
-                - Major: Public Health.
-                <br />- GPA: 3.12 /4.0
               </h5>
             </div>
           </div>

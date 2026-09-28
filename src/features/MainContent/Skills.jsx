@@ -14,26 +14,16 @@ const Skills = () => {
           <h3>Technical Skills</h3>
           <ul>
             <li>
-              <strong>Testing & Methodologies:</strong> Functional Testing,
-              Integration Testing, Regression Testing, API Testing, Test Case
-              Design, Defect Tracking, Agile/Scrum
+              <strong>Testing & Methodologies:</strong> Manual Testing, Automation Testing (Playwright), Functional Testing, Integration Testing, Regression Testing, API Testing, Data-Driven Testing (DDT), Test Case Design, Defect Lifecycle, Agile/Scrum
             </li>
             <li>
-              <strong>Testing Tools & AI:</strong> Postman, Jira, GitHub Issues,
-              AI-powered testing tools (ChatGPT, GitHub Copilot for test data &
-              case generation)
+              <strong>Databases & Backend:</strong>SQL (PostgreSQL, MySQL), NoSQL (MongoDB aggregation), RESTful APIs, Node.js
             </li>
             <li>
-              <strong>Databases & Backend:</strong> SQL (MySQL), NoSQL
-              (MongoDB), Node.js (Express), RESTful API verification
+              <strong>CI/CD & Tools:</strong> GitHub Actions, Docker, Git & GitHub, Jira, Confluence
             </li>
             <li>
-              <strong>Frontend & Core Tech:</strong> HTML5, CSS3, JavaScript,
-              ReactJS, NextJS, DevTools (Debugging)
-            </li>
-            <li>
-              <strong>Others:</strong> Git & GitHub, Docker, Figma (UI/UX
-              Review)
+              <strong>Domain Expertise:</strong> EdTech & AI (Adaptive Learning, Knowledge Gap Diagnosis), Banking & Payment Networks (Clearing & Settlement, Credit Scoring), Enterprise HRM & Payroll
             </li>
           </ul>
         </div>

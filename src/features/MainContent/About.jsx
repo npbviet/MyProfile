@@ -17,14 +17,13 @@ const About = () => {
         </div>
         <div className={styles.aboutDetails}>
           <p>
-            I come from a public health background with nearly three years of
-            experience in non-governmental organizations, which built my strong
-            analytical and detail-oriented mindset. Driven by a deep passion for
-            technology, I transitioned into software development and built a
-            solid foundation in both frontend and backend systems. With this
-            technical background, I am transitioning into software testing,
-            leveraging my ability to understand code, analyze edge cases, and
-            integrate AI tools to ensure top-tier product quality.
+            With nearly 5 years of comprehensive experience across the Software
+            Testing Life Cycle (STLC), I specialize in ensuring software quality
+            for high-reliability systems in Banking & Fintech, Enterprise HRM,
+            and AI-powered EdTech. I bring deep expertise in both practical
+            Manual Testing and scalable Automation Testing with Playwright
+            (TypeScript), combined with advanced API testing, complex SQL database
+            verification, and CI/CD automated pipeline integration.
           </p>
         </div>
         <div className={styles.aboutContent}>
@@ -34,11 +33,11 @@ const About = () => {
 
           <div className={styles.careerGoals}>
             <p>
-              <b>Career Goals:</b> I am seeking an opportunity to thrive as a{" "}
-              <b>Software QA/QC Engineer</b>, where I can leverage my full-stack
-              technical background to perform rigorous testing, optimize QA
-              workflows with AI, and deliver high-quality software solutions
-              that align perfectly with business requirements.
+              <b>Career Goals:</b> Seeking an opportunity to excel as a{" "}
+              <b>Senior QC Engineer </b>, where I can leverage
+              my dual-track expertise in manual testing and Playwright automation
+              frameworks to eliminate defects, optimize testing cycles, and deliver
+              flawless software solutions aligning with international standards.
             </p>
           </div>
           <div className={styles.personalInfo}>

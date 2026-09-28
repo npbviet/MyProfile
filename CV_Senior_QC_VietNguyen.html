@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nguyen Phan Bao Viet - Senior Software QA/QC Engineer CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --primary: #1e3a8a;
+      --primary-dark: #0f172a;
+      --primary-light: #2563eb;
+      --accent: #0284c7;
+      --text-main: #1f2937;
+      --text-muted: #4b5563;
+      --text-light: #6b7280;
+      --bg-page: #f8fafc;
+      --bg-card: #ffffff;
+      --border-color: #e2e8f0;
+      --badge-auto-bg: #ecfdf5;
+      --badge-auto-text: #065f46;
+      --badge-auto-border: #a7f3d0;
+      --badge-man-bg: #fffbeb;
+      --badge-man-text: #92400e;
+      --badge-man-border: #fde68a;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: var(--text-main);
+      background-color: var(--bg-page);
+      line-height: 1.5;
+      font-size: 13.5px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Floating Action Bar */
+    .action-bar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(15, 23, 42, 0.95);
+      backdrop-filter: blur(10px);
+      color: white;
+      padding: 12px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .action-bar .info {
+      font-size: 14px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .action-bar .info i {
+      color: #38bdf8;
+    }
+    .action-btns {
+      display: flex;
+      gap: 12px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 13px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      border: none;
+    }
+    .btn-primary {
+      background: #2563eb;
+      color: white;
+    }
+    .btn-primary:hover {
+      background: #1d4ed8;
+      transform: translateY(-1px);
+    }
+    .btn-outline {
+      background: transparent;
+      color: #e2e8f0;
+      border: 1px solid #475569;
+    }
+    .btn-outline:hover {
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+    }
+
+    /* CV Container */
+    .cv-container {
+      max-width: 920px;
+      margin: 28px auto 60px;
+      background: var(--bg-card);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid var(--border-color);
+      padding: 38px 46px;
+    }
+
+    /* Header Section */
+    .header {
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 20px;
+      margin-bottom: 22px;
+    }
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 10px;
+    }
+    .name-title h1 {
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--primary-dark);
+      letter-spacing: -0.5px;
+      line-height: 1.2;
+    }
+    .name-title .title {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--primary-light);
+      margin-top: 4px;
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+    }
+    .contacts-grid {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      gap: 10px 24px;
+      margin-top: 14px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .contact-item i {
+      color: var(--accent);
+      width: 14px;
+    }
+    .contact-item a {
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+    .contact-item a:hover {
+      color: var(--primary-light);
+      text-decoration: underline;
+    }
+
+    /* Section Component */
+    .section {
+      margin-bottom: 24px;
+    }
+    .section-title {
+      font-size: 15px;
+      font-weight: 800;
+      color: var(--primary-dark);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding-bottom: 8px;
+      border-bottom: 1.5px solid #cbd5e1;
+      margin-bottom: 14px;
+    }
+    .section-title i {
+      color: var(--accent);
+      font-size: 14px;
+    }
+
+    /* Professional Summary */
+    .summary-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .summary-list li {
+      position: relative;
+      padding-left: 18px;
+      color: var(--text-main);
+      text-align: justify;
+    }
+    .summary-list li::before {
+      content: "▪";
+      color: var(--accent);
+      position: absolute;
+      left: 0;
+      top: -1px;
+      font-size: 16px;
+    }
+
+    /* Skills Grid */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 9px;
+    }
+    .skill-category {
+      display: grid;
+      grid-template-columns: 210px 1fr;
+      gap: 12px;
+      align-items: baseline;
+      padding: 3px 0;
+    }
+    .skill-cat-name {
+      font-weight: 700;
+      color: var(--primary-dark);
+      font-size: 13px;
+    }
+    .skill-cat-desc {
+      color: var(--text-main);
+      font-size: 13px;
+    }
+    .skill-cat-desc strong {
+      color: var(--primary-dark);
+    }
+
+    /* Experience Items */
+    .company-block {
+      margin-bottom: 22px;
+    }
+    .company-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 4px;
+    }
+    .company-title {
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--primary-dark);
+    }
+    .company-location {
+      font-size: 13px;
+      color: var(--text-light);
+      font-weight: 500;
+    }
+    .role-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 14px;
+    }
+    .role-title {
+      font-size: 14.5px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .role-date {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-muted);
+      background: #f1f5f9;
+      padding: 2px 10px;
+      border-radius: 12px;
+    }
+
+    /* Project Cards */
+    .project-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-left: 3.5px solid var(--accent);
+      border-radius: 6px;
+      padding: 13px 18px;
+      margin-bottom: 15px;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+    .project-card.automation-project {
+      border-left-color: #10b981;
+    }
+    .project-card.manual-project {
+      border-left-color: #f59e0b;
+    }
+    .project-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 6px;
+    }
+    .project-title-group h4 {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--primary-dark);
+      line-height: 1.35;
+    }
+    .project-role-text {
+      font-size: 12.5px;
+      color: var(--text-light);
+      margin-top: 2px;
+    }
+    .badges {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    .badge {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 3px 8px;
+      border-radius: 4px;
+      letter-spacing: 0.4px;
+    }
+    .badge-automation {
+      background: var(--badge-auto-bg);
+      color: var(--badge-auto-text);
+      border: 1px solid var(--badge-auto-border);
+    }
+    .badge-manual {
+      background: var(--badge-man-bg);
+      color: var(--badge-man-text);
+      border: 1px solid var(--badge-man-border);
+    }
+    .badge-domain {
+      background: #f1f5f9;
+      color: #334155;
+      border: 1px solid #cbd5e1;
+    }
+    .project-desc {
+      font-size: 13px;
+      color: #374151;
+      margin-bottom: 9px;
+      line-height: 1.45;
+      font-style: italic;
+    }
+    .project-bullets {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .project-bullets li {
+      position: relative;
+      padding-left: 16px;
+      color: var(--text-main);
+      font-size: 13px;
+      line-height: 1.45;
+      text-align: justify;
+    }
+    .project-bullets li::before {
+      content: "•";
+      color: var(--primary-light);
+      position: absolute;
+      left: 2px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .project-bullets strong {
+      color: var(--primary-dark);
+      font-weight: 600;
+    }
+
+    /* Education & Certs */
+    .edu-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+    .edu-item {
+      background: #f8fafc;
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      padding: 12px 18px;
+    }
+    .edu-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 4px;
+    }
+    .edu-title {
+      font-weight: 700;
+      color: var(--primary-dark);
+      font-size: 13.5px;
+    }
+    .edu-date {
+      font-size: 12.5px;
+      color: var(--text-light);
+      font-weight: 500;
+    }
+    .edu-school {
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 13px;
+      margin-bottom: 4px;
+    }
+    .edu-details {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    /* Print Specific Media Rules */
+    @media print {
+      body {
+        background-color: white !important;
+        font-size: 12px !important;
+        line-height: 1.38 !important;
+      }
+      .action-bar {
+        display: none !important;
+      }
+      .cv-container {
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        box-shadow: none !important;
+        border: none !important;
+        border-radius: 0 !important;
+      }
+      .project-card {
+        padding: 9px 13px !important;
+        margin-bottom: 11px !important;
+      }
+      .section {
+        margin-bottom: 16px !important;
+      }
+      .section-title {
+        margin-bottom: 8px !important;
+        padding-bottom: 4px !important;
+      }
+      .summary-list li, .project-bullets li {
+        font-size: 12px !important;
+        line-height: 1.36 !important;
+      }
+      a {
+        text-decoration: none !important;
+        color: inherit !important;
+      }
+      @page {
+        size: A4;
+        margin: 11mm 13mm 11mm 13mm;
+      }
+      .page-break {
+        page-break-before: always;
+        break-before: page;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Screen Top Actions -->
+  <div class="action-bar">
+    <div class="info">
+      <i class="fa-solid fa-file-shield"></i>
+      <span>Senior QC Engineer Curriculum Vitae | Updated Profile</span>
+    </div>
+    <div class="action-btns">
+      <button class="btn btn-primary" onclick="window.print()">
+        <i class="fa-solid fa-print"></i> Print / Export to PDF (Ctrl + P)
+      </button>
+      <a href="CV_Senior_QC_VietNguyen.md" class="btn btn-outline" download>
+        <i class="fa-solid fa-download"></i> Download Markdown (.md)
+      </a>
+    </div>
+  </div>
+
+  <div class="cv-container">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-top">
+        <div class="name-title">
+          <h1>NGUYEN PHAN BAO VIET</h1>
+          <div class="title">Senior Software QA/QC Engineer | Automation & Manual Specialist</div>
+        </div>
+      </div>
+      <div class="contacts-grid">
+        <div class="contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Da Nang, Vietnam</span>
+        </div>
+        <div class="contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:viet.nguyen@itdragons.com">viet.nguyen@itdragons.com</a>
+        </div>
+        <div class="contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <span>(+84) 903 717 459</span>
+        </div>
+        <div class="contact-item">
+          <i class="fa-brands fa-linkedin"></i>
+          <a href="https://linkedin.com/in/npbviet" target="_blank">linkedin.com/in/npbviet</a>
+        </div>
+        <div class="contact-item">
+          <i class="fa-brands fa-github"></i>
+          <a href="https://github.com/npbviet" target="_blank">github.com/npbviet</a>
+        </div>
+        <div class="contact-item">
+          <i class="fa-solid fa-globe"></i>
+          <a href="https://npbviet.github.io/MyProfile/" target="_blank">Online Portfolio</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Professional Summary -->
+    <section class="section">
+      <h2 class="section-title">
+        <i class="fa-solid fa-user-check"></i> Professional Summary
+      </h2>
+      <ul class="summary-list">
+        <li><strong>Senior Software QA/QC Engineer with nearly 5 years of comprehensive experience</strong> across the entire Software Testing Life Cycle (STLC), specializing in high-reliability <strong>Banking & Fintech</strong>, <strong>Enterprise HRM</strong>, and <strong>AI-powered EdTech</strong> platforms.</li>
+        <li><strong>Hands-on expertise in Automation Testing:</strong> designing, architecting, and maintaining scalable End-to-End (E2E) automation frameworks using <strong>Playwright (TypeScript)</strong>, Page Object Model (POM), Data-Driven Testing (DDT), and CI/CD pipelines.</li>
+        <li><strong>Adept at dual-track quality engineering:</strong> seamlessly balancing practical <strong>Manual Testing</strong> (exploratory, edge-case analysis, boundary value, risk-based verification) and robust <strong>Automation Testing</strong> to maximize test coverage and shorten release cycles.</li>
+        <li><strong>Proficient in API & Database Verification:</strong> experienced in RESTful API testing (Postman, Playwright APIRequestContext), payload validation, and formulating <strong>complex SQL queries</strong> (PostgreSQL, MySQL - joins, subqueries, transaction logs) and NoSQL (MongoDB aggregation pipelines).</li>
+        <li><strong>High-performing Agile/Scrum collaborator with fluent English communication:</strong> confident in conducting sprint reviews, defect triage, and technical discussions directly with developers, product owners, and international stakeholders.</li>
+      </ul>
+    </section>
+
+    <!-- Core Competencies & Skills -->
+    <section class="section">
+      <h2 class="section-title">
+        <i class="fa-solid fa-gears"></i> Core Competencies & Technical Skills
+      </h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <div class="skill-cat-name">Testing & Methodologies</div>
+          <div class="skill-cat-desc">Manual Testing, Automation Testing (Playwright), Functional Testing, Integration Testing, Regression Testing, API Testing, Data-Driven Testing (DDT), Test Case Design, Defect Lifecycle, Agile/Scrum.</div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-cat-name">Databases & Backend</div>
+          <div class="skill-cat-desc"><strong>SQL</strong> (PostgreSQL, MySQL - complex queries, joins, transactions), <strong>NoSQL</strong> (MongoDB aggregation), RESTful APIs, Node.js.</div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-cat-name">CI/CD & Tools</div>
+          <div class="skill-cat-desc">GitHub Actions, Docker, Git & GitHub, Jira, Confluence, Postman, Playwright Test Runner.</div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-cat-name">Domain Expertise</div>
+          <div class="skill-cat-desc"><strong>EdTech & AI</strong> (Adaptive Learning, Knowledge Gap Diagnosis), <strong>Banking & Payment Networks</strong> (Clearing & Settlement, Credit Scoring), <strong>Enterprise HRM & Payroll</strong>.</div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-cat-name">Languages</div>
+          <div class="skill-cat-desc"><strong>English</strong> (IELTS 5.5 - 6.0: Can read technical documents, write emails, formal reports & participate in technical discussions), <strong>French</strong> (DELF B1 - B2 level), <strong>Vietnamese</strong> (Native).</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Experience -->
+    <section class="section">
+      <h2 class="section-title">
+        <i class="fa-solid fa-briefcase"></i> Professional Work Experience
+      </h2>
+
+      <!-- IT DRAGONS -->
+      <div class="company-block">
+        <div class="company-header">
+          <div class="company-title">IT DRAGONS</div>
+          <div class="company-location">Da Nang, Vietnam</div>
+        </div>
+        <div class="role-header">
+          <div class="role-title">Senior Software Quality Control (QC) Engineer</div>
+          <div class="role-date">06/2022 – Present</div>
+        </div>
+
+        <!-- Project 1: HRM System (Senior QC) -->
+        <div class="project-card automation-project">
+          <div class="project-header">
+            <div class="project-title-group">
+              <h4>1. Enterprise HRM & Payroll System</h4>
+              <div class="project-role-text">Role: Senior QC Engineer | Testing Approach: Playwright Automation & Manual Testing</div>
+            </div>
+            <div class="badges">
+              <span class="badge badge-auto-bg badge-automation">Playwright Automation</span>
+              <span class="badge badge-domain">Senior QC Role</span>
+              <span class="badge badge-domain">Data-Driven Testing (DDT)</span>
+            </div>
+          </div>
+          <ul class="project-bullets">
+            <li>Led the overall testing lifecycle; architected comprehensive Test Strategies and E2E automation frameworks using <strong>Playwright (TypeScript)</strong> with <strong>Data-Driven Testing (DDT)</strong>.</li>
+            <li>Automated payroll computation verification across complex tax brackets, social insurance deductions, overtime multipliers, and allowances.</li>
+            <li>Automated cross-browser testing across Chromium, Firefox, and WebKit; implemented automated <strong>RBAC security test scripts</strong> preventing unauthorized data leaks of salary records.</li>
+            <li>Executed data validation testing on the intermediate Hub using <strong>complex SQL queries</strong>, ensuring zero data corruption between raw client imports and backend databases.</li>
+          </ul>
+        </div>
+
+        <!-- Project 2: Banking Payment Network (Middle QC) -->
+        <div class="project-card automation-project">
+          <div class="project-header">
+            <div class="project-title-group">
+              <h4>2. Banking Payment Network</h4>
+              <div class="project-role-text">Role: Middle QC Engineer | Testing Approach: Playwright Automation & Manual Testing</div>
+            </div>
+            <div class="badges">
+              <span class="badge badge-auto-bg badge-automation">Playwright Automation</span>
+              <span class="badge badge-domain">Middle QC Role</span>
+              <span class="badge badge-domain">Fintech & Banking</span>
+            </div>
+          </div>
+          <ul class="project-bullets">
+            <li>Designed and maintained a <strong>Playwright (TypeScript)</strong> E2E Automation Framework following the Page Object Model (POM) pattern.</li>
+            <li>Automated core authentication: user <strong>Login, Logout</strong>, session persistence, and invalid credential error handling.</li>
+            <li>Automated <strong>new merchant onboarding</strong> flow: registration, business validation, and merchant portal activation.</li>
+            <li>Automated <strong>purchase transaction workflow</strong>: payment initiation, card/account input validation, and payment gateway callback verification.</li>
+            <li>Automated <strong>transaction hold features</strong> (pre-authorized funds hold reservation, expiration, and status transitions) and <strong>refund workflows</strong> (full/partial refunds, ledger reversal verification).</li>
+            <li>Wrote targeted <strong>SQL queries</strong> to audit transaction status flags and refund logs in the database; executed manual testing for third-party network timeout edge cases.</li>
+          </ul>
+        </div>
+
+        <!-- Project 3: EdTech AI (Middle QC) -->
+        <div class="project-card manual-project">
+          <div class="project-header">
+            <div class="project-title-group">
+              <h4>3. AI-Powered Adaptive Learning & Knowledge Assessment Platform (EdTech)</h4>
+              <div class="project-role-text">Role: Middle QC Engineer | Testing Approach: 100% Manual Testing & API/Data Validation</div>
+            </div>
+            <div class="badges">
+              <span class="badge badge-manual">100% Manual Testing</span>
+              <span class="badge badge-domain">Middle QC Role</span>
+              <span class="badge badge-domain">API & Data Validation</span>
+            </div>
+          </div>
+          <ul class="project-bullets">
+            <li>Formulated master <strong>Test Strategy and Test Plans</strong> covering syllabus/past exam ingestion, dynamic examination UI, error-pattern detection engine, and teacher diagnostic dashboards.</li>
+            <li>Performed manual functional, exploratory, and boundary testing on real-time exam interfaces (autosave, timer sync, submission integrity).</li>
+            <li>Conducted extensive <strong>API testing using Postman</strong> for AI microservices (document parsing, prompt-to-question generation, token thresholds, JSON schema validation).</li>
+            <li><strong>Validated AI Error-Pattern Recognition & Knowledge Gap Engine:</strong> designed simulation matrices for recurring arithmetic slips vs. thematic theory errors, verifying accurate gap classification and remediation plans.</li>
+            <li>Executed <strong>complex SQL & MongoDB queries</strong> to audit student telemetry event logs and knowledge gap matrices.</li>
+          </ul>
+        </div>
+
+        <!-- Project 4: Credit Scoring (Middle QC) -->
+        <div class="project-card manual-project">
+          <div class="project-header">
+            <div class="project-title-group">
+              <h4>4. Credit Scoring & Financial Risk Assessment System</h4>
+              <div class="project-role-text">Role: Middle QC Engineer | Testing Approach: 100% Manual Testing & Data Validation</div>
+            </div>
+            <div class="badges">
+              <span class="badge badge-manual">100% Manual Testing</span>
+              <span class="badge badge-domain">Middle QC Role</span>
+              <span class="badge badge-domain">Banking Domain</span>
+            </div>
+          </div>
+          <ul class="project-bullets">
+            <li>Planned and executed comprehensive manual testing strategies for multi-variable credit scoring algorithms and rule engines.</li>
+            <li>Conducted rigorous <strong>Data Validation and Negative Testing</strong> with corrupted or anomalous credit bureau records to evaluate system error-handling resilience.</li>
+            <li>Formulated <strong>complex SQL queries</strong> to audit score computation tables, validation rules, and compliance audit logs.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- AMAZINGIT -->
+      <div class="company-block">
+        <div class="company-header">
+          <div class="company-title">AMAZINGIT</div>
+          <div class="company-location">Da Nang, Vietnam</div>
+        </div>
+        <div class="role-header">
+          <div class="role-title">Junior / Fresher Software QC Engineer</div>
+          <div class="role-date">04/2022 – 06/2022</div>
+        </div>
+        <div class="project-card">
+          <ul class="project-bullets">
+            <li>Analyzed business requirements, designed detailed test cases and test scenarios for an internal CRM web application.</li>
+            <li>Executed manual functional, UI/UX, and regression testing across sprint cycles to identify defects and ensure requirement alignment.</li>
+            <li>Performed basic API testing using Postman to validate CRUD endpoints, HTTP status codes, and JSON response payloads.</li>
+            <li>Wrote basic SQL queries (SELECT, WHERE, JOIN) to prepare test data and verify database integrity.</li>
+            <li>Logged, tracked, and verified defect lifecycles in Jira; collaborated with development team in Agile standups.</li>
+            <li><strong>Skills utilized:</strong> Functional Testing, Regression Testing, Test Case Design, API Testing (Postman), SQL, Jira, Agile/Scrum.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section">
+      <h2 class="section-title">
+        <i class="fa-solid fa-graduation-cap"></i> Education
+      </h2>
+      <div class="edu-grid">
+        <div class="edu-item">
+          <div class="edu-header">
+            <div class="edu-title">Web Fullstack Developer Certificate Program</div>
+            <div class="edu-date">02/2020 – 02/2022</div>
+          </div>
+          <div class="edu-school">FUNiX</div>
+          <div class="edu-details">
+            • Completed the FUNiX Web Fullstack Developer Certificate Program.<br>
+            • GPA: 8.4 / 10
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+</body>
+</html>

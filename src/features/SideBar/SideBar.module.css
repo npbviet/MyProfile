@@ -81,3 +81,18 @@
   top: 13.25rem;
   left: 15.9rem;
 }
+
+@media print {
+  .sidebar {
+    position: absolute;
+    min-height: 100%;
+    height: 100%;
+  }
+  .sidebar .footer {
+    position: absolute;
+    bottom: 2rem;
+  }
+  .btnHideSidebar {
+    display: none;
+  }
+}
