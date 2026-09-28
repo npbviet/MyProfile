@@ -17,7 +17,7 @@ const About = () => {
         </div>
         <div className={styles.aboutDetails}>
           <p>
-            With nearly 5 years of comprehensive experience across the Software
+            With over 5 years of comprehensive experience across the Software
             Testing Life Cycle (STLC), I specialize in ensuring software quality
             for high-reliability systems in Banking & Fintech, Enterprise HRM,
             and AI-powered EdTech. I bring deep expertise in both practical
@@ -46,27 +46,10 @@ const About = () => {
                 <b>Gender</b>: Male
               </li>
               <li>
-                <b>Phone</b>: (+84) 903717459
-              </li>
-              <li>
                 <b>Date of birth</b>: 12/03/1996
-              </li>
-
-              <li>
-                <b>Email</b>: npb.viet@gmail.com
               </li>
               <li>
                 <b>Address</b>: DaNang
-              </li>
-              <li>
-                <b>GitHub</b> :{" "}
-                <a
-                  href="https://github.com/npbviet"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  github.com/npbviet
-                </a>
               </li>
             </ul>
 

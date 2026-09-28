@@ -13,7 +13,7 @@ const Experience = () => {
         <div className={styles.workItem}>
           <div className={styles.timeLine}>
             <h5>
-              03/2026 - <span className={styles.recent}>Present</span>
+              03/2025 - <span className={styles.recent}>Present</span>
             </h5>
           </div>
           <div className={styles.workDetail}>
@@ -32,25 +32,6 @@ const Experience = () => {
                 - Automated cross-browser testing (Chromium, Firefox, WebKit) and implemented automated <strong>RBAC security test scripts</strong> preventing unauthorized data leaks of salary records.<br />
                 - Executed data validation testing on the intermediate Hub using complex SQL queries, ensuring zero data corruption between raw client imports and backend databases.<br /><br />
                 <em>Skills & Tools: Playwright (TypeScript), E2E Automation, Data-Driven Testing (DDT), RBAC Security Testing, SQL Verification, CI/CD, Enterprise HRM & Payroll.</em>
-              </h5>
-            </div>
-          </div>
-        </div>
-
-        {/* Milestone 2: Middle QC Engineer */}
-        <div className={styles.workItem}>
-          <div className={styles.timeLine}>
-            <h5>12/2021 - 03/2026</h5>
-          </div>
-          <div className={styles.workDetail}>
-            <div className={styles.nameWork}>
-              <h4>
-                Middle Software Quality Control (QC) Engineer <br />
-                at IT Dragons
-              </h4>
-            </div>
-            <div className={styles.workContent}>
-              <h5>
                 <strong>2. Banking Payment Network <br />
                   [Middle QC Engineer | Playwright Automation & Manual Testing]:</strong><br />
                 - Designed and maintained a Playwright (TypeScript) E2E Automation Framework following the Page Object Model (POM) pattern.<br />
@@ -67,6 +48,26 @@ const Experience = () => {
                 - Conducted extensive API testing using Postman for AI microservices (document parsing, prompt-to-question generation, token thresholds, JSON schema validation).<br />
                 - Validated AI Error-Pattern Recognition & Knowledge Gap Engine: designed simulation matrices for recurring arithmetic slips vs. thematic theory errors, verifying accurate gap classification and remediation plans.<br />
                 - Executed complex SQL & MongoDB queries to audit student telemetry event logs and knowledge gap matrices.<br /><br />
+              </h5>
+            </div>
+          </div>
+        </div>
+
+        {/* Milestone 2: Middle QC Engineer */}
+        <div className={styles.workItem}>
+          <div className={styles.timeLine}>
+            <h5>12/2021 - 03/2025</h5>
+          </div>
+          <div className={styles.workDetail}>
+            <div className={styles.nameWork}>
+              <h4>
+                Middle Software Quality Control (QC) Engineer <br />
+                at IT Dragons
+              </h4>
+            </div>
+            <div className={styles.workContent}>
+              <h5>
+
 
                 <strong>4. Credit Scoring & Financial Risk Assessment System <br />
                   [Middle QC Engineer | 100% Manual Testing & Data Validation]:</strong><br />
@@ -83,7 +84,7 @@ const Experience = () => {
         {/* Milestone 3: Junior / Fresher QC Engineer */}
         <div className={styles.workItem}>
           <div className={styles.timeLine}>
-            <h5>09/2021 - 12/2021</h5>
+            <h5>09/2020 - 12/2021</h5>
           </div>
           <div className={styles.workDetail}>
             <div className={styles.nameWork}>
