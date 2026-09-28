@@ -144,13 +144,13 @@ def make_cv_docx(output_path):
     # 4. Work Experience
     add_heading1("Professional Work Experience")
 
-    # IT Dragons Header
+    # IT Dragons - Senior Milestone
     add_p([
         ("IT DRAGONS  ", True, False, 23, "0F172A"),
         ("— Da Nang, Vietnam", False, True, 20, "64748B")
     ], before=80, after=20)
     add_p([
-        ("Senior Software Quality Control (QC) Engineer  |  06/2022 – Present", True, False, 21, "2563EB")
+        ("Senior Software Quality Control (QC) Engineer  |  03/2026 – Present", True, False, 21, "2563EB")
     ], before=0, after=70)
 
     # Project 1: Enterprise HRM & Payroll System (Senior QC)
@@ -173,6 +173,15 @@ def make_cv_docx(output_path):
     add_bullet([
         ("Executed data validation testing on the intermediate Hub using complex SQL queries, ensuring zero data corruption between raw client imports and backend databases.", False, False, 20, "111827")
     ])
+
+    # IT Dragons - Middle Milestone
+    add_p([
+        ("IT DRAGONS  ", True, False, 23, "0F172A"),
+        ("— Da Nang, Vietnam", False, True, 20, "64748B")
+    ], before=90, after=20)
+    add_p([
+        ("Middle Software Quality Control (QC) Engineer  |  12/2021 – 03/2026", True, False, 21, "2563EB")
+    ], before=0, after=70)
 
     # Project 2: Banking Payment Network (Middle QC)
     add_p([
@@ -249,7 +258,7 @@ def make_cv_docx(output_path):
         ("— Da Nang, Vietnam", False, True, 20, "64748B")
     ], before=90, after=20)
     add_p([
-        ("Junior / Fresher Software QC Engineer  |  04/2022 – 06/2022", True, False, 21, "2563EB")
+        ("Junior / Fresher Software QC Engineer  |  09/2021 – 12/2021", True, False, 21, "2563EB")
     ], before=0, after=50)
     add_bullet([
         ("Analyzed business requirements, designed detailed test cases and test scenarios for an internal CRM web application.", False, False, 20, "111827")
