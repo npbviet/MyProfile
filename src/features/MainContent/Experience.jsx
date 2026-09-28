@@ -9,10 +9,11 @@ const Experience = () => {
       </div>
 
       <div className={styles.jobContent}>
+        {/* Milestone 1: Senior QC Engineer */}
         <div className={styles.workItem}>
           <div className={styles.timeLine}>
             <h5>
-              12/2021 - <span className={styles.recent}>Present</span>
+              03/2026 - <span className={styles.recent}>Present</span>
             </h5>
           </div>
           <div className={styles.workDetail}>
@@ -30,7 +31,26 @@ const Experience = () => {
                 - Automated payroll computation verification across complex tax brackets, social insurance deductions, overtime multipliers, and allowances.<br />
                 - Automated cross-browser testing (Chromium, Firefox, WebKit) and implemented automated <strong>RBAC security test scripts</strong> preventing unauthorized data leaks of salary records.<br />
                 - Executed data validation testing on the intermediate Hub using complex SQL queries, ensuring zero data corruption between raw client imports and backend databases.<br /><br />
+                <em>Skills & Tools: Playwright (TypeScript), E2E Automation, Data-Driven Testing (DDT), RBAC Security Testing, SQL Verification, CI/CD, Enterprise HRM & Payroll.</em>
+              </h5>
+            </div>
+          </div>
+        </div>
 
+        {/* Milestone 2: Middle QC Engineer */}
+        <div className={styles.workItem}>
+          <div className={styles.timeLine}>
+            <h5>12/2021 - 03/2026</h5>
+          </div>
+          <div className={styles.workDetail}>
+            <div className={styles.nameWork}>
+              <h4>
+                Middle Software Quality Control (QC) Engineer <br />
+                at IT Dragons
+              </h4>
+            </div>
+            <div className={styles.workContent}>
+              <h5>
                 <strong>2. Banking Payment Network <br />
                   [Middle QC Engineer | Playwright Automation & Manual Testing]:</strong><br />
                 - Designed and maintained a Playwright (TypeScript) E2E Automation Framework following the Page Object Model (POM) pattern.<br />
@@ -54,12 +74,13 @@ const Experience = () => {
                 - Conducted rigorous Data Validation and Negative Testing with corrupted or anomalous credit bureau records to evaluate system error-handling resilience.<br />
                 - Formulated complex SQL queries to audit score computation tables, validation rules, and compliance audit logs.<br /><br />
 
-                <em>Skills & Tools: Playwright (TypeScript), Manual Testing, E2E Automation, API Testing (Postman & Playwright), Advanced SQL, NoSQL (MongoDB), CI/CD (GitHub Actions), EdTech AI, Banking & Payment Networks, HRM & Payroll.</em>
+                <em>Skills & Tools: Playwright (TypeScript), Manual Testing, Postman API Testing, Advanced SQL, NoSQL (MongoDB), Jira, Agile/Scrum, Fintech & Banking, EdTech AI.</em>
               </h5>
             </div>
           </div>
         </div>
 
+        {/* Milestone 3: Junior / Fresher QC Engineer */}
         <div className={styles.workItem}>
           <div className={styles.timeLine}>
             <h5>09/2021 - 12/2021</h5>

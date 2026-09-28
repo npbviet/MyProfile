@@ -30,7 +30,7 @@
 
 ### **IT DRAGONS** | Da Nang, Vietnam
 **Senior Software Quality Control (QC) Engineer**  
-*06/2022 – Present*
+*03/2026 – Present*
 
 #### **Project 1: Enterprise HRM & Payroll System**
 * **Role / Level:** Senior QC Engineer | **Testing Approach:** Playwright Automation & Manual Testing
@@ -41,6 +41,10 @@
   * Executed data validation testing on the intermediate Hub using **complex SQL queries**, ensuring zero data corruption between raw client imports and backend databases.
 
 ---
+
+### **IT DRAGONS** | Da Nang, Vietnam
+**Middle Software Quality Control (QC) Engineer**  
+*12/2021 – 03/2026*
 
 #### **Project 2: Banking Payment Network**
 * **Role / Level:** Middle QC Engineer | **Testing Approach:** Playwright Automation & Manual Testing
@@ -78,7 +82,7 @@
 
 ### **AMAZINGIT** | Da Nang, Vietnam
 **Junior / Fresher Software QC Engineer**  
-*04/2022 – 06/2022*
+*09/2021 – 12/2021*
 
 * Analyzed business requirements, designed detailed test cases and test scenarios for an internal CRM web application.
 * Executed manual functional, UI/UX, and regression testing across sprint cycles to identify defects and ensure requirement alignment.

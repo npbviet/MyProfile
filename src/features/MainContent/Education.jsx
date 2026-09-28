@@ -10,7 +10,7 @@ const Education = () => {
       <div className={styles.eduContent}>
         <div className={styles.schoolItem}>
           <div className={styles.timeLine}>
-            <h5>02/2020 - 02/2022</h5>
+            <h5>02/2020 - 09/2021</h5>
           </div>
           <div className={styles.schoolDetail}>
             <div className={styles.nameSchool}>
